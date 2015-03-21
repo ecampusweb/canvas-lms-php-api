@@ -27,11 +27,12 @@ class CanvasClient
         preg_replace_callback(
             '/:(\w+)/',
             function ($matches) use ($arguments) {
-                if(!isset($arguments[$matches[1]])) {
-                    throw new \Exception("Required argument not set: ".$matches[1]);
+
+                if (!isset($arguments[0][$matches[1]])) {
+                    throw new \Exception("Required argument not set: " . $matches[1]);
                 }
 
-                return $arguments[$matches[1]];
+                return $arguments[0][$matches[1]];
             },
             $this->getRequests[$name]['path']
         );

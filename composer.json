@@ -1,0 +1,21 @@
+{
+	"name": "ecampusweb/canvas-lms-php-api",
+	"description": "A php wrapper for Instructure's Canvas API",
+	"minimum-stability": "dev",
+	"license": "GNU",
+	"authors": [
+		{
+			"name": "Michael Rowe",
+			"email": "admin@ecampusweb.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"guzzlehttp/guzzle": "5.2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ecampusweb\\CanvasLmsPhpApi\\": "src/"
+		}
+	}
+}
